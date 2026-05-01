@@ -1,0 +1,48 @@
+header:
+  schema-version: 2.0.0
+  last-updated: '2026-05-01'
+  last-reviewed: '2026-05-01'
+  url: https://github.com/common-cloud-controls/.github/raw/main/security-insights.yml
+  comment: |
+    Project-level Security Insights file for Common Cloud Controls (CCC).
+    Repository-level files in each child repo may inherit project metadata
+    from this file via header.project-si-source.
+    Note that github.com/common-cloud-controls is a development-only space.
+    The official project repository is github.com/finos/common-cloud-controls
+
+project:
+  name: Common Cloud Controls
+  administrators:
+    - name: Eddie Knight
+      affiliation: Revanite
+      email: eknight@revanite.io
+      primary: true
+  repositories:
+    - name: capability-catalogs
+      url: https://github.com/common-cloud-controls/capability-catalogs
+      comment: |
+        Capabilities for each cloud service category.
+    - name: threat-catalogs
+      url: https://github.com/common-cloud-controls/threat-catalogs
+      comment: |
+        Threats for each cloud service category.
+    - name: control-catalogs
+      url: https://github.com/common-cloud-controls/control-catalogs
+      comment: |
+        Security controls mapped to capabilities and threats.
+    - name: core-catalog
+      url: https://github.com/common-cloud-controls/core-catalog
+      comment: |
+        Cross-cutting capabilities, threats, and controls that underpin
+        all service catalogs.
+    - name: delivery-toolkit
+      url: https://github.com/common-cloud-controls/delivery-toolkit
+      comment: |
+        CLI and GitHub Action for building and publishing catalog artifacts.
+    - name: common-cloud-controls.github.io
+      url: https://github.com/common-cloud-controls/common-cloud-controls.github.io
+      comment: |
+        Public website — catalog content is published here on release.
+  vulnerability-reporting:
+    reports-accepted: true
+    bug-bounty-available: false
